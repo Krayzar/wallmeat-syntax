@@ -1,1 +1,68 @@
 @import "./styles/base.less";
+
+.comment {
+  color: black;
+  background-color: @red;
+  box-shadow: 0 0 15px @red;
+  border-radius: 3px;
+
+  // Nested comments shouldn't double-box-shadow
+  .comment {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.comment.whitespace {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: black;
+    }
+
+    &.string,
+    &.variable {
+      color: @red;
+    }
+    &.parameters,
+    &.array {
+      color: @syntax-text-color;
+    }
+
+    &.heading,
+    &.identity {
+      color: @blue;
+    }
+
+    &.bold {
+      color: @light-orange;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @purple;
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: darken(@red, 10%);
+  }
+
+}
+
+.variable {
+  color: @red;
+
+  &.interpolation {
+    color: darken(@red, 0%);
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color;
+  }
+}
