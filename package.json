@@ -1,7 +1,7 @@
 {
   "name": "wallmeat-syntax",
   "theme": "syntax",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A 'Vania' inspired syntax theme influenced by Elly, Monokai, and Sublime 2's Halloween.",
   "repository": "https://github.com/Krayzar/wallmeat-syntax",
   "license": "MIT",
