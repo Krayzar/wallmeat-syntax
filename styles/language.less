@@ -1,9 +1,9 @@
 .comment {
-  color: @green;
-  background-color: rgba(255,0,0,0.6);
-  box-shadow: 0 0 5px @red;
+  color: @trans-vania;
+  text-shadow: 1px 1px #111111;
+  background-color: @blood;
+  box-shadow: 0 0 2px @red;
   border-radius: 3px;
-  padding: 0.05em;
 
   // Nested comments shouldn't double-box-shadow
   .comment {
@@ -23,7 +23,7 @@
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @vania-green;
   }
 }
 
@@ -39,7 +39,7 @@
   }
 
   &.other.special-method {
-    color: @blue;
+    color: @skull;
   }
 
   &.other.unit {
@@ -55,7 +55,7 @@
   color: @orange;
 
   &.character.escape {
-    color: @royal-blue;
+    color: @belmont-blue;
   }
 
   &.numeric {
@@ -63,11 +63,11 @@
   }
 
   &.other.color {
-    color: @royal-blue;
+    color: @belmont-blue;
   }
 
   &.other.symbol {
-    color: @green;
+    color: @vania-green;
   }
 }
 
@@ -82,15 +82,15 @@
 }
 
 .invalid.illegal {
-  background-color: @green;
+  background-color: @vania-green;
   color: @syntax-background-color;
 }
 
 .string {
-  color: @green;
+  color: @vania-green;
 
   &.regexp {
-    color: @royal-blue;
+    color: @belmont-blue;
 
     .source.ruby.embedded {
       color: @orange;
@@ -98,14 +98,14 @@
   }
 
   &.other.link {
-    color: @green;
+    color: @vania-green;
   }
 }
 
 .punctuation {
   &.definition {
     &.comment {
-      color: @green;
+      color: @vania-green;
     }
 
     &.string,
@@ -119,7 +119,7 @@
 
     &.heading,
     &.identity {
-      color: @blue;
+      color: @skull;
     }
 
     &.bold {
@@ -144,17 +144,17 @@
   }
 
   &.function  {
-    color: @royal-blue;
+    color: @belmont-blue;
 
     &.any-method {
-      color: @blue;
+      color: @skull;
     }
   }
 }
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @skull;
   }
 
   &.name.class, &.name.type.class {
@@ -162,11 +162,11 @@
   }
 
   &.name.section {
-    color: @blue;
+    color: @skull;
   }
 
   &.name.tag {
-    color: @green;
+    color: @vania-green;
     font-weight:bold;
   }
 
@@ -174,7 +174,7 @@
     color: @orange;
 
     &.id {
-      color: @blue;
+      color: @skull;
     }
   }
 }
@@ -189,7 +189,7 @@
   }
 
   &.require {
-    color: @blue;
+    color: @skull;
   }
 
   &.selector {
@@ -217,7 +217,7 @@
   }
 
   &.deleted {
-    color: @green;
+    color: @vania-green;
   }
 
   &.italic {
@@ -226,15 +226,15 @@
   }
 
   &.heading .punctuation.definition.heading {
-    color: @blue;
+    color: @skull;
   }
 
   &.inserted {
-    color: @green;
+    color: @vania-green;
   }
 
   &.list {
-    color: @green;
+    color: @vania-green;
   }
 
   &.quote {
@@ -242,13 +242,13 @@
   }
 
   &.raw.inline {
-    color: @green;
+    color: @vania-green;
   }
 }
 
 .source.gfm .markup {
   -webkit-font-smoothing: antialiased;
   &.heading {
-    color: @green;
+    color: @vania-green;
   }
 }

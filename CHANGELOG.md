@@ -1,3 +1,3 @@
 ## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+* Custom comment boxes based on the Elly syntax theme.
+* Annoyingly bright colors, just how I like them.
