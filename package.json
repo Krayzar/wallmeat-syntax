@@ -3,9 +3,32 @@
   "theme": "syntax",
   "version": "0.2.7",
   "description": "A 'Vania' inspired syntax theme influenced by Elly, Monokai, and Sublime 2's Halloween.",
-  "repository": "https://github.com/Krayzar/wallmeat-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Krayzar/wallmeat-syntax"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
+  },
+  "readme": "# wallmeat-syntax theme\n\nA \"Vania\" inspired syntax theme influenced by Elly, Monokai, and  Sublime 2's Halloween.\n\nFor folks that hate their eyes and like meat in their walls.\n\n![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/Krayzar/wallmeat-syntax/issues"
+  },
+  "homepage": "https://github.com/Krayzar/wallmeat-syntax",
+  "_id": "wallmeat-syntax@0.2.7",
+  "_shasum": "5c705684b734bdb85e8000a8e68717cfad3aa168",
+  "_resolved": "file:..\\d-115211-36544-1lh8ay6\\package.tgz",
+  "_from": "..\\d-115211-36544-1lh8ay6\\package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
   }
 }

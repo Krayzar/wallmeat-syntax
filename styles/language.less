@@ -1,4 +1,4 @@
-.comment {
+.syntax--comment {
   color: @trans-vania;
   text-shadow: 1px 1px #111111;
   background-color: @blood;
@@ -6,249 +6,249 @@
   border-radius: 3px;
 
   // Nested comments shouldn't double-box-shadow
-  .comment {
+  .syntax--comment {
     box-shadow: none;
     background-color: transparent;
   }
 }
 
-.comment.whitespace {
+.syntax--comment.syntax--whitespace {
   background-color: transparent;
   box-shadow: none;
 }
 
-.entity {
-  &.name.type {
+.syntax--entity {
+  &.syntax--name.syntax--type {
     color: @light-orange;
   }
 
-  &.other.inherited-class {
+  &.syntax--other.syntax--inherited-class {
     color: @vania-green;
   }
 }
 
-.keyword {
+.syntax--keyword {
   color: @purple;
 
-  &.control {
+  &.syntax--control {
     color: @purple;
   }
 
-  &.operator {
+  &.syntax--operator {
     color: @syntax-text-color;
   }
 
-  &.other.special-method {
+  &.syntax--other.syntax--special-method {
     color: @skull;
   }
 
-  &.other.unit {
+  &.syntax--other.syntax--unit {
     color: @orange;
   }
 }
 
-.storage {
+.syntax--storage {
   color: @purple;
 }
 
-.constant {
+.syntax--constant {
   color: @orange;
 
-  &.character.escape {
+  &.syntax--character.syntax--escape {
     color: @belmont-blue;
   }
 
-  &.numeric {
+  &.syntax--numeric {
     color: @orange;
   }
 
-  &.other.color {
+  &.syntax--other.syntax--color {
     color: @belmont-blue;
   }
 
-  &.other.symbol {
+  &.syntax--other.syntax--symbol {
     color: @vania-green;
   }
 }
 
-.variable {
+.syntax--variable {
   color: @red;
   font-weight: 500;
 
-  &.interpolation
-  &.parameter.function {
+  &.syntax--interpolation
+  &.syntax--parameter.syntax--function {
     color: @syntax-text-color;
   }
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--illegal {
   background-color: @vania-green;
   color: @syntax-background-color;
 }
 
-.string {
+.syntax--string {
   color: @vania-green;
 
-  &.regexp {
+  &.syntax--regexp {
     color: @belmont-blue;
 
-    .source.ruby.embedded {
+    .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
     }
   }
 
-  &.other.link {
+  &.syntax--other.syntax--link {
     color: @vania-green;
   }
 }
 
-.punctuation {
-  &.definition {
-    &.comment {
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--comment {
       color: @vania-green;
     }
 
-    &.string,
-    &.variable {
+    &.syntax--string,
+    &.syntax--variable {
       color: @red;
     }
-    &.parameters,
-    &.array {
+    &.syntax--parameters,
+    &.syntax--array {
       color: @syntax-text-color;
     }
 
-    &.heading,
-    &.identity {
+    &.syntax--heading,
+    &.syntax--identity {
       color: @skull;
     }
 
-    &.bold {
+    &.syntax--bold {
       color: @light-orange;
       font-weight: bold;
     }
 
-    &.italic {
+    &.syntax--italic {
       color: @purple;
     }
   }
 
-  &.section.embedded {
+  &.syntax--section.syntax--embedded {
     color: @red;
   }
 
 }
 
-.support {
-  &.class {
+.syntax--support {
+  &.syntax--class {
     color: @light-orange;
   }
 
-  &.function  {
+  &.syntax--function  {
     color: @belmont-blue;
 
-    &.any-method {
+    &.syntax--any-method {
       color: @skull;
     }
   }
 }
 
-.entity {
-  &.name.function {
+.syntax--entity {
+  &.syntax--name.syntax--function {
     color: @skull;
   }
 
-  &.name.class, &.name.type.class {
+  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @light-orange;
   }
 
-  &.name.section {
+  &.syntax--name.syntax--section {
     color: @skull;
   }
 
-  &.name.tag {
+  &.syntax--name.syntax--tag {
     color: @vania-green;
     font-weight:bold;
   }
 
-  &.other.attribute-name {
+  &.syntax--other.syntax--attribute-name {
     color: @orange;
 
-    &.id {
+    &.syntax--id {
       color: @skull;
     }
   }
 }
 
-.meta {
-  &.class {
+.syntax--meta {
+  &.syntax--class {
     color: @light-orange;
   }
 
-  &.link {
+  &.syntax--link {
     color: @orange;
   }
 
-  &.require {
+  &.syntax--require {
     color: @skull;
   }
 
-  &.selector {
+  &.syntax--selector {
     color: @purple;
   }
 
-  &.separator {
+  &.syntax--separator {
     background-color: @bat-wing;
     color: @syntax-text-color;
   }
 }
 
-.none {
+.syntax--none {
   color: @syntax-text-color;
 }
 
-.markup {
-  &.bold {
+.syntax--markup {
+  &.syntax--bold {
     color: @orange;
     font-weight: bold;
   }
 
-  &.changed {
+  &.syntax--changed {
     color: @purple;
   }
 
-  &.deleted {
+  &.syntax--deleted {
     color: @vania-green;
   }
 
-  &.italic {
+  &.syntax--italic {
     color: @purple;
     font-style: italic;
   }
 
-  &.heading .punctuation.definition.heading {
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
     color: @skull;
   }
 
-  &.inserted {
+  &.syntax--inserted {
     color: @vania-green;
   }
 
-  &.list {
+  &.syntax--list {
     color: @vania-green;
   }
 
-  &.quote {
+  &.syntax--quote {
     color: @orange;
   }
 
-  &.raw.inline {
+  &.syntax--raw.syntax--inline {
     color: @vania-green;
   }
 }
 
-.source.gfm .markup {
+.syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: antialiased;
-  &.heading {
+  &.syntax--heading {
     color: @vania-green;
   }
 }
